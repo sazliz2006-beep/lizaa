@@ -90,6 +90,49 @@ initial-scale=1.0">
 <div id="preloader">
     <img src="preloader.gif" alt="загрузка страницы">
 </div>
+
+	 <div class="content">
+        <h1>Мой лендинг</h1>
+        <p>Добро пожаловать! Страница полностью загружена.</p>
+
+        <!-- ФОРМА ОБРАТНОЙ СВЯЗИ. Пункт 3: Создание форм -->
+        <div class="form-container">
+            <h2>Форма обратной связи</h2>
+            <form method="post">
+                <!-- Поле 1 -->
+                <label>Ваше имя:</label>
+                <input type="text" name="name" placeholder="Иван Иванов" required>
+                
+                <!-- Поле 2 -->
+                <label>Email:</label>
+                <input type="email" name="email" placeholder="ivan@example.com" required>
+                
+                <!-- Поле 3 -->
+                <label>Телефон:</label>
+                <input type="tel" name="phone" placeholder="+7 (999) 123-45-67">
+                
+                <!-- Поле 4 -->
+                <label>Тема:</label>
+                <select name="subject">
+                    <option>Вопрос</option>
+                    <option>Сотрудничество</option>
+                    <option>Поддержка</option>
+                    <option>Другое</option>
+                </select>
+                
+                <!-- Поле 5 -->
+                <label>Сообщение:</label>
+                <textarea name="message" rows="4" placeholder="Ваше сообщение..." required></textarea>
+                
+                <!-- Поле 6 -->
+                <label>Оценка сайта (1-5):</label>
+                <input type="number" name="rating" min="1" max="5" placeholder="5">
+                
+                <!-- Кнопка отправки. Пункт 3.1в -->
+                <button type="submit" name="submit">Отправить</button>
+            </form>
+        </div>
+    </div>
 <script src="index.js"></script>
 </body>
 
